@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ------------------------------------------------------------------------------------------------------------------------- -->
+    <!-- link to poppins font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- link to styles.css -->
+    <link rel="stylesheet" href="styles.css" />
+    <!--fontawesome  link icon library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <!-- tailwind---------------------------------->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- ionicon link -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <!-- -------------------------------------------------------------------------------------------------------------------------- -->
+    <title>VEGAS MOTOR RENTAL</title>
+  </head>
+  <body>
+    <!-- NAVBAR START -->
+
+    <!-- <nav>
+      <div class="menus">
+        <ul class="nav-menu">
+          <li class="nav-item"><a href="#">HOME</a></li>
+          <li class="nav-item"><a href="#">PRICING</a></li>
+          <li class="nav-item"><a href="#">SHOP</a></li>
+          <li class="nav-item"><a href="#">TOUR</a></li>
+          <li class="nav-item"><a href="#">LOCATION</a></li>
+        </ul>
+      </div>
+    </nav> -->
+    <!-- NAVBAR END -->
+    <!-- NAVBAR TAILWIND -->
+    <nav class="p-5 shadow md:flex md:items-center md:justify-between">
+      <div class="flex justify-between items-center">
+        <a
+          href="index.html"
+          class="text-2xl font-[arial] cursor-pointer text-white"
+          ><img
+            src="/img/royalgif02.gif"
+            class="h-10 inline"
+            alt="royalgif02"
+          />
+          RENT ME VEGAS</a
+        >
+        <span class="text-3xl cursor-pointer text-white md:hidden mx-2 block"
+          ><ion-icon name="menu-outline" onclick="Menu(this)"></ion-icon
+        ></span>
+      </div>
+      <ul
+        class="md:flex md:items-center z-[-1] md:z-auto md:static absolute bg-gray-500 w-full left-0 md:w-auto md:py-0 py-0 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500"
+      >
+        <li class="mx-4 my-6 md:my-0">
+          <a href="#" class="text-sm text-white hover:text-red-500 suration-500"
+            >HOME</a
+          >
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+          <a href="#" class="text-sm text-white hover:text-red-500 suration-500"
+            >PRICING</a
+          >
+        </li>
+        <li>
+          <a href="#" class="text-sm text-white hover:text-red-500 suration-500"
+            >SHOP</a
+          >
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+          <a href="#" class="text-sm text-white hover:text-red-500 suration-500"
+            >TOUR</a
+          >
+        </li>
+        <li class="mx-4 my-6 md:my-0">
+          <a href="#" class="text-sm text-white hover:text-red-500 suration-500"
+            >LOCATION</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <!-- container hero start -->
+    <div class="main-container">
+      <div class="main-tittle01">
+        <h1>LIFE IS GOOD</h1>
+        <p>Rent a Motorbike in VEGAS</p>
+      </div>
+      <div class="main-image">
+        <img src="img/bmw_cafe_racer1.jpg" alt="bmw_cafe_racer" />
+      </div>
+    </div>
+
+    <!-- container promo start-->
+    <div class="container-promo">
+      <div class="promo1">
+        <div class="promo1-img">
+          <img
+            src="img/helmet.png"
+            alt="helmet"
+            style="display: inline-block"
+          />
+          FREE HELMET
+        </div>
+      </div>
+      <div class="promo2">
+        <div class="promo2-img">
+          <img src="img/gps25.png" alt="gps" style="display: inline-block" />
+          FREE GPS
+        </div>
+      </div>
+      <div class="promo3">
+        <div class="promo3-img">
+          <img
+            src="img/gloves.png"
+            alt="gloves"
+            style="display: inline-block"
+          />
+          FREE GLOVES
+        </div>
+      </div>
+    </div>
+    <!-- container promo end -->
+
+    <!-- container explore start-->
+    <div class="container-explore">
+      <ul class="tour">
+        <h1>EXPLORE VEGAS WITH US</h1>
+        <li>
+          <i class="fa-solid fa-motorcycle"></i>
+          All of our motorcycle rentals are kept in the finest working
+          condition.
+        </li>
+
+        <li>
+          <i class="fa-solid fa-motorcycle"></i> Our prices are affordable and
+          competitive.
+        </li>
+        <li>
+          <i class="fa-solid fa-motorcycle"></i> 100% Satisfaction Guaranteed
+        </li>
+        <li><i class="fa-solid fa-motorcycle"></i> Group Guided Tours</li>
+        <li><i class="fa-solid fa-motorcycle"></i> Corperate Outings</li>
+        <li><i class="fa-solid fa-motorcycle"></i> Self Guided Tours</li>
+        <li><i class="fa-solid fa-motorcycle"></i> 2HR, 4HR & Daily Rentals</li>
+      </ul>
+    </div>
+    <!-- container explore end -->
+
+    <!-- tour in vegas -->
+    <div class="container-tour">
+      <h2>GUIDED TOUR PACKAGES</h2>
+      <div class="tour-menu">
+        <!-- image 1 -->
+        <div class="cards">
+          <img src="img/rt66.jpg" class="card-img" alt="rt66" />
+          <div class="card-body">
+            <h1 class="card-title">ROUTE 66</h1>
+            <p class="card-sub-title">Must visit place for real bikers</p>
+            <button>Book</button>
+          </div>
+        </div>
+        <!-- image 2 -->
+        <div class="cards">
+          <img src="img/strip.jpg" class="card-img" alt="strip" />
+          <div class="card-body">
+            <h1 class="card-title">VEGAS STRIP</h1>
+            <p class="card-sub-title">Must visit place for everyone</p>
+            <button>Book</button>
+          </div>
+        </div>
+        <!-- image 3 -->
+        <div class="cards">
+          <img src="img/valley.jpg" class="card-img" alt="valley" />
+          <div class="card-body">
+            <h1 class="card-title">VALLEY OF FIRE</h1>
+            <p class="card-sub-title">Must visit place for best scenery</p>
+            <button>Book</button>
+          </div>
+        </div>
+        <!-- image 4 -->
+        <div class="cards">
+          <img src="img/deathvalley.jpg" class="card-img" alt="deathvalley" />
+          <div class="card-body">
+            <h1 class="card-title">DEATH VALLEY</h1>
+            <p class="card-sub-title">Must visit place for best scenery</p>
+            <button>Book</button>
+          </div>
+        </div>
+        <!-- image 5 -->
+        <div class="cards">
+          <img src="img/hooverdam.jpg" class="card-img" alt="hooverdam" />
+          <div class="card-body">
+            <h1 class="card-title">HOOVER DAM</h1>
+            <p class="card-sub-title">Must visit place for best scenery</p>
+            <button>Book</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- tour in vegas end -->
+
+    <!-- pick your bike -->
+    <h2 class="pick-title">PICK YOUR BIKE</h2>
+
+    <div class="wrapper">
+      <i id="left" class="fa-solid fa-angle-left"></i>
+      <ul class="carousel">
+        <li class="cardss">
+          <div class="img">
+            <img
+              src="img/caferacer01.jpg"
+              alt="caferacer01"
+              draggable="false"
+            />
+          </div>
+          <h2>Racer 01</h2>
+          <span>01</span>
+        </li>
+        <li class="cardss">
+          <div class="img">
+            <img
+              src="img/caferacer02.jpg "
+              alt="caferacer02"
+              draggable="false"
+            />
+          </div>
+          <h2>Racer 02</h2>
+          <span>02</span>
+        </li>
+        <li class="cardss">
+          <div class="img">
+            <img
+              src="img/caferacer03.jpg"
+              alt="caferacer03"
+              draggable="false"
+            />
+          </div>
+          <h2>Racer 03</h2>
+          <span>03</span>
+        </li>
+        <li class="cardss">
+          <div class="img">
+            <img
+              src="img/caferacer04.jpg"
+              alt="caferacer04"
+              draggable="false"
+            />
+          </div>
+          <h2>Racer 04</h2>
+          <span>04</span>
+        </li>
+        <li class="cardss">
+          <div class="img">
+            <img
+              src="img/caferacer05.jpg"
+              alt="caferacer51"
+              draggable="false"
+            />
+          </div>
+          <h2>Racer 05</h2>
+          <span>05</span>
+        </li>
+        <li class="cardss">
+          <div class="img">
+            <img
+              src="img/caferacer06.jpg"
+              alt="caferacer06"
+              draggable="false"
+            />
+          </div>
+          <h2>Racer 06</h2>
+          <span>06</span>
+        </li>
+        <li class="cardss">
+          <div class="img">
+            <img
+              src="img/caferacer07.jpg"
+              alt="caferacer07"
+              draggable="false"
+            />
+          </div>
+          <h2>Racer 07</h2>
+          <span>07</span>
+        </li>
+        <li class="cardss">
+          <div class="img">
+            <img
+              src="img/caferacer08.jpg"
+              alt="caferacer08"
+              draggable="false"
+            />
+          </div>
+          <h2>Racer 08</h2>
+          <span>08</span>
+        </li>
+      </ul>
+      <i id="right" class="fa-solid fa-angle-right"></i>
+    </div>
+
+    <!-- GALLERY -->
+    <div class="gallery-tittle">
+      <h2>COMPLETE YOUR GEARS</h2>
+    </div>
+    <div class="grid-container">
+      <div class="product-grid">
+        <div class="card img1">
+          <img src="img/backpack.jpg" alt="backpack" />
+          <img
+            class="hover-img"
+            src="img/backpacks-font.png"
+            alt="backpacks-font"
+          />
+        </div>
+        <div class="card img2">
+          <img src="img/helmet04.jpg" alt="helmet04" />
+          <img class="hover-img" src="img/HELMET-FONT.png" alt="HELMET-FONT" />
+        </div>
+        <div class="card img5">
+          <img src="img/bikegloves.jpg" alt="bikegloves" />
+          <img
+            class="hover-img"
+            src="img/bikegloves-font.png"
+            alt="bikegloves-font"
+          />
+        </div>
+        <div class="card img3">
+          <img src="img/bikeshoes.jpg" alt="bikeshoes" />
+          <img
+            class="hover-img"
+            src="img/bikeshoes-font.png"
+            alt="bikeshoes-font"
+          />
+        </div>
+        <div class="card img4">
+          <img src="img/goggle02.jpg" alt="goggle02" />
+          <img
+            class="hover-img"
+            src="img/goggle02-font.png"
+            alt="goggle02-font"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <div class="footer-menu">
+        <div class="company">
+          <h3>RENT ME <span>VEGAS</span></h3>
+          <p>
+            Don't hesitate to reach out and ask us anything! For general
+            questions
+          </p>
+          <div class="sosmed">
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-youtube"></i
+            ><i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-square-instagram"></i>
+          </div>
+        </div>
+        <div class="quicklink">
+          <h3>QUICK LINKS</h3>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Motorbikes</a></li>
+            <li><a href="#">Tour Packages</a></li>
+            <li><a href="">Chat</a></li>
+          </ul>
+        </div>
+        <div class="information">
+          <h3>INFORMATION</h3>
+          <ul>
+            <li>
+              <i class="fa-solid fa-location-dot"></i
+              ><span>5191 S Las Vegas Blvd, Las Vegas, NV 89119</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-clock"></i
+              ><span>Open Daily : 9.00am - 5.00pm</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone"></i><span>+1 917 888 1234</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope"></i
+              ><span>rentmevegas@mail.com</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- footer end -->
+    <script src="scripts.js"></script>
+  </body>
+</html>

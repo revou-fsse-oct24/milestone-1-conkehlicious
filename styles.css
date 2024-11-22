@@ -1,0 +1,417 @@
+:root {
+  --main-blue: #0c2d57;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: whitesmoke;
+  font-family: poppins, arial;
+}
+/* navbar */
+nav {
+  width: 100%;
+  text-align: center;
+  background-color: var(--main-blue);
+  position: fixed;
+  z-index: 9999;
+}
+
+/* .nav-menu {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  font-size: 20px;
+  padding-top: 20px;
+} */
+/* 
+.nav-item a {
+  color: aliceblue;
+}
+.nav-item a:hover {
+  color: orangered;
+  cursor: cell;
+} */
+
+/* navbar end */
+
+/* container hero start */
+.main-tittle01 {
+  position: absolute;
+  font-weight: 800;
+  top: 42%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  transform: translateX(-70%);
+  opacity: 0;
+  animation: slide-in 2s ease-out forwards;
+}
+@keyframes slide-in {
+  20% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
+
+.main-tittle01 h1 {
+  font-size: 100px;
+  color: aliceblue;
+}
+.main-tittle01 p {
+  font-size: 60px;
+  color: aliceblue;
+  font-weight: 700;
+}
+
+/* container promo start*/
+.container-promo {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  font-size: 40px;
+  color: black;
+}
+
+.promo1 {
+  background-color: #df9d19;
+  width: 100%;
+}
+.promo2 {
+  width: 100%;
+  background-color: #0c2d57;
+  color: white;
+}
+
+.promo3 {
+  background-color: #df272e;
+}
+/* container promo end */
+
+/* container explore  start*/
+.container-explore {
+  margin-top: 50px;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../img/vegas-sign.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.tour {
+  display: grid;
+  grid-column: 1fr;
+  justify-content: center;
+  font-size: 25px;
+  color: rgb(201, 194, 194);
+  padding: 100px 0 100px 0px;
+}
+.tour li {
+  margin-left: 30px;
+  list-style-image: url(../images/icons8-motorbike-25.png);
+}
+
+/* container explore  end */
+
+/* tour in vegas */
+.container-tour {
+  background-color: #0c2d57;
+  color: white;
+  margin-top: 200px;
+  padding-top: 50px;
+  text-align: center;
+  font-size: 30px;
+}
+.tour-menu {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  gap: 20px;
+  overflow: auto;
+}
+.cards {
+  width: 320px;
+  height: 500px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 8px solid white;
+  position: relative;
+}
+.card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.card-body {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: -100%;
+  position: absolute;
+  backdrop-filter: blur(5px);
+  border-radius: 15px;
+  color: white;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: 1s;
+}
+.cards:hover .card-body {
+  right: 0;
+}
+.card-title {
+  font-size: 60px;
+  font-weight: 500;
+  color: white;
+}
+.card-sub-title {
+  text-transform: capitalize;
+  font-size: 20px;
+  font-weight: 600;
+  color: white;
+}
+.tour-menu button {
+  background-color: white;
+  border-radius: 10px;
+  color: black;
+}
+/* pick your bike */
+.pick-title {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 60px;
+  font-weight: 900;
+  text-shadow: 1px 1px 5px rgb(203, 37, 37);
+}
+.wrapper {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper i {
+  height: 50px;
+  width: 50px;
+  background: white;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.wrapper .carousel {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 4) - 12px);
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: 0;
+  scroll-behavior: smooth;
+}
+
+.carousel .dragging .cardss {
+  cursor: grab;
+  user-select: none;
+}
+.carousel .cardss {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.cardss .img img {
+  width: 300px;
+  height: 500px;
+}
+
+.cardss h2 {
+  font-weight: 900;
+  font-size: 1.56rem;
+}
+/* gallery */
+.gallery-tittle h2 {
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 50px;
+  font-size: 60px;
+  font-weight: 900;
+  text-shadow: 1px 1px 5px rgb(203, 37, 37);
+}
+.grid-container {
+  width: 80%;
+  margin-inline: auto;
+  padding-inline: 2rem;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 300px 300px;
+  gap: 20px;
+}
+.card {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+.cardss img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--border-radius);
+  transition: all linear 0.3s;
+  cursor: pointer;
+}
+img.hover-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+}
+
+.card:hover img {
+  opacity: -5;
+}
+.card:hover img.hover-img {
+  opacity: 1;
+}
+
+.img1 {
+  grid-row: span 2;
+}
+.img2 {
+  grid-column: span 2;
+}
+
+.img4 {
+  grid-column: span 2;
+}
+
+/* footer */
+footer {
+  margin-top: 50px;
+  width: 100%;
+  background-color: var(--main-blue);
+  color: white;
+}
+.footer-menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  padding: 20px;
+  line-height: 3;
+}
+.company h3 {
+  font-size: 50px;
+}
+.company span {
+  color: red;
+}
+.sosmed i {
+  font-size: 20px;
+  padding-right: 30px;
+  color: #df272e;
+}
+.quicklink a {
+  color: white;
+}
+.quicklink a:hover {
+  color: #df272e;
+  cursor: cell;
+}
+.information span {
+  padding: 10px;
+}
+.information i {
+  color: red;
+}
+h6 {
+  text-align: center;
+}
+
+/* media for mobile */
+@media (max-width: 460px) {
+  body {
+    max-width: 100%;
+  }
+  /* navbar start */
+  /* .menus {
+    display: none;
+  } */
+  .main-image {
+    padding-top: 80px;
+  }
+  .main-tittle01 {
+    margin-top: -180px;
+  }
+  .main-tittle01 h1 {
+    font-size: 25px;
+  }
+  .main-tittle01 p {
+    font-size: 15px;
+  }
+  .container-promo .promo1 {
+    height: 50px;
+    font-size: 15px;
+    padding-top: 13px;
+  }
+  .container-promo .promo2 {
+    height: 50px;
+    font-size: 15px;
+    padding-top: 13px;
+  }
+  .container-promo .promo3 {
+    height: 50px;
+    font-size: 15px;
+    padding-top: 13px;
+  }
+
+  /* container explore start */
+
+  .container-explore {
+    width: 100%;
+  }
+  .tour {
+    font-size: 20px;
+    padding: 40px;
+  }
+  /* container explore end */
+
+  .pick-title,
+  .gallery-tittle h2 {
+    font-size: 40px;
+  }
+  .wrapper {
+    width: 400px;
+  }
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 2) - 12px);
+  }
+  .cards .img img {
+    height: 300px;
+  }
+  .grid-container {
+    width: 100%;
+  }
+  .product-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px 100px;
+  }
+  footer .footer-menu {
+    grid-template-columns: 1fr;
+  }
+  .img3 {
+    height: 221px;
+  }
+}
