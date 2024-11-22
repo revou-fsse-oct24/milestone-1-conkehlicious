@@ -1,10 +1,7 @@
 ## TAKE A PEEP AT MY PROJECT
 
 ###
-### https://vegasrent.netlify.app/
-
-
-
+### https://revou-fsse-oct24.github.io/milestone-1-conkehlicious/
 # ABOUT THIS PROJECT
 
 #### TASK
