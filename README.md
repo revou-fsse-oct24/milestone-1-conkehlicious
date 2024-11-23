@@ -17,7 +17,7 @@
 <p><img src="img/task03.png" width = "400px"/></p>
 
 ##### 4.  Responsive navbar 
-<p><img src="img/task04.png" width = "400px"/></p>
+<p><img src="img/task4.png" width = "400px"/></p>
 
 
 
