@@ -265,7 +265,7 @@ nav {
   display: inline-block;
   overflow: hidden;
 }
-.cardss img {
+.card img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -298,7 +298,7 @@ img.hover-img {
   grid-column: span 2;
 }
 
-/* footer */
+/* footer -------------------------------------*/
 footer {
   margin-top: 50px;
   width: 100%;
@@ -386,8 +386,9 @@ h6 {
     font-size: 20px;
     padding: 40px;
   }
-  /* container explore end */
+  /* container explore end ------------------------------*/
 
+  /* tour in vegas--------------------------------------------- */
   .tour-menu {
     display: grid;
     grid-template-columns: 1fr;
@@ -404,16 +405,19 @@ h6 {
   .wrapper .carousel {
     grid-auto-columns: calc((100% / 2) - 12px);
   }
-  /* GALLERY */
+  /* GALLERY------------------------------------------- */
   .grid-container {
     width: 100%;
   }
-
-  footer .footer-menu {
-    grid-template-columns: 1fr;
-  }
   .product-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 50px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .img1 {
+    width: 210%;
+  }
+  /* footer-------------------------------------------------- */
+  footer .footer-menu {
+    grid-template-columns: 1fr;
   }
 }
