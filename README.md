@@ -1,10 +1,7 @@
 ## TAKE A PEEP AT MY PROJECT
 
 ###
-### https://vegasrent.netlify.app/
-
-
-
+### https://rentmevegas88.netlify.app/
 # ABOUT THIS PROJECT
 
 #### TASK
