@@ -13,7 +13,7 @@ function Menu(e) {
 // gallery carousel------------------------------------------------------------------->
 const carousel = document.querySelector(".carousel");
 const arrowBtns = document.querySelectorAll(".wrapper i");
-const firstCardWidth = carousel.querySelector(".cards").offsetWidth;
+const firstCardWidth = carousel.querySelector(".cardss").offsetWidth;
 
 let isDragging = false,
   startX,

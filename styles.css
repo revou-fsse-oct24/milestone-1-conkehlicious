@@ -123,7 +123,7 @@ nav {
 .container-tour {
   background-color: #0c2d57;
   color: white;
-  margin-top: 200px;
+  margin-top: 50px;
   padding-top: 50px;
   text-align: center;
   font-size: 30px;
@@ -388,6 +388,12 @@ h6 {
   }
   /* container explore end */
 
+  .tour-menu {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  /* pick your bike */
   .pick-title,
   .gallery-tittle h2 {
     font-size: 40px;
@@ -398,20 +404,16 @@ h6 {
   .wrapper .carousel {
     grid-auto-columns: calc((100% / 2) - 12px);
   }
-  .cards .img img {
-    height: 300px;
-  }
+  /* GALLERY */
   .grid-container {
     width: 100%;
   }
-  .product-grid {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 100px 100px 100px;
-  }
+
   footer .footer-menu {
     grid-template-columns: 1fr;
   }
-  .img3 {
-    height: 221px;
+  .product-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 50px;
   }
 }
